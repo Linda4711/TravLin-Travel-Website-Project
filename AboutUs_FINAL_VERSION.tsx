@@ -6,7 +6,7 @@ import Footer from './components/Footer'
 import SEOHead from './components/SEOHead'
 import SectionDivider from './components/SectionDivider'
 
-const aboutHeroImage = "https://images.unsplash.com/photo-1532594722383-b75fb8381b55?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0cmF2ZWwlMjBwbGFubmluZyUyMHdvcmtzcGFjZSUyMGNvZmZlZSUyMG5vdGVib29rJTIwbWFwc3xlbnwxfHx8fDE3NTg1MjkxMTd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+const aboutHeroImage = "https://res.cloudinary.com/dgpwz1nqr/image/upload/v1759077921/office-1548297_1280_wdtekt.webp"
 
 interface AboutUsPageProps {
   onNavigateBack?: () => void
@@ -82,7 +82,7 @@ export default function AboutUsPage({ onNavigateBack, onNavigateToContact, onNav
       <section 
         className="relative min-h-[85vh] flex items-center justify-center overflow-hidden pt-24"
         style={{
-          background: `linear-gradient(135deg, rgba(0, 117, 204, 0.85) 0%, rgba(237, 125, 49, 0.75) 100%), url("${aboutHeroImage}")`,
+          background: `linear-gradient(135deg, rgba(0, 117, 204, 0.25) 0%, rgba(237, 125, 49, 0.20) 100%), url("${aboutHeroImage}")`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed'
