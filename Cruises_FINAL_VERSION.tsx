@@ -33,9 +33,9 @@ import {
 import { motion } from 'framer-motion'
 
 // LOCAL TESTING: Using Unsplash URLs (replace with figma:asset for deployment)
-const cliaPromotionalImage = "https://images.unsplash.com/photo-1551287261-594c8fb5bce6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxDTElBJTIwY3J1aXNlJTIwY2VydGlmaWNhdGlvbiUyMGJhY2tncm91bmR8ZW58MXx8fHwxNzU4NTM5NDI1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-const masterCruiseConsultantLogo = "https://images.unsplash.com/photo-1609771377023-7a7480af949a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYXN0ZXIlMjBjcnVpc2UlMjBjb25zdWx0YW50JTIwYmFkZ2V8ZW58MXx8fHwxNzU4NTM5NDMwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-const cruiseMonthOctoberLogo = "https://images.unsplash.com/photo-1728994532782-ea1e24406bdb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvY3RvYmVyJTIwY3J1aXNlJTIwbW9udGglMjBwcm9tb3Rpb25hbHxlbnwxfHx8fDE3NTg1Mzk0MzR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+const cliaPromotionalImage = "https://res.cloudinary.com/dgpwz1nqr/image/upload/v1759074515/CLIA_Image_9_web7uj.png"
+const masterCruiseConsultantLogo = "https://res.cloudinary.com/dgpwz1nqr/image/upload/v1759074414/2024_Master_Cruise_Consultant_undated_izynfv.png"
+const cruiseMonthOctoberLogo = "https://res.cloudinary.com/dgpwz1nqr/image/upload/v1759074482/October_is_Cruise_Month_yeiifn.png"
 
 interface CruisesProps {
   onNavigateBack?: () => void
@@ -191,7 +191,7 @@ export default function Cruises({ onNavigateBack, onNavigateToContact, onNavigat
       <section 
         className="relative min-h-[85vh] flex items-center justify-center overflow-hidden pt-24"
         style={{
-          background: `linear-gradient(135deg, rgba(0, 117, 204, 0.45) 0%, rgba(237, 125, 49, 0.35) 100%), url("https://images.unsplash.com/photo-1592036930568-5c7543f818eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjcnVpc2UlMjBzaGlwJTIwZGVzdGluYXRpb24lMjBhenVyZSUyMGxhZ29vbnxlbnwxfHx8fDE3NTg0MzQwMzB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral")`,
+          background: `linear-gradient(135deg, rgba(0, 117, 204, 0.25) 0%, rgba(237, 125, 49, 0.20) 100%), url("https://images.unsplash.com/photo-1592036930568-5c7543f818eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjcnVpc2UlMjBzaGlwJTIwZGVzdGluYXRpb24lMjBhenVyZSUyMGxhZ29vbnxlbnwxfHx8fDE3NTg0MzQwMzB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral")`,
           backgroundSize: 'cover',
           backgroundPosition: 'center bottom',
           backgroundAttachment: 'fixed'
@@ -236,8 +236,8 @@ export default function Cruises({ onNavigateBack, onNavigateToContact, onNavigat
                   style={{ 
                     borderRadius: '0px',
                     boxShadow: '0 20px 40px rgba(0, 117, 204, 0.08), 0 8px 16px rgba(237, 125, 49, 0.06)',
-                    width: '320px',
-                    height: '320px',
+                    width: '360px',
+                    height: '360px',
                     margin: '0 auto'
                   }}
                 >
@@ -340,7 +340,7 @@ export default function Cruises({ onNavigateBack, onNavigateToContact, onNavigat
       <section 
         className="py-16 bg-white relative overflow-hidden" 
         style={{
-          background: `linear-gradient(135deg, rgba(248, 249, 250, 0.75) 0%, rgba(233, 236, 239, 0.65) 100%), url("https://images.unsplash.com/photo-1694606025576-984337e79764?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjcnVpc2UlMjBzaGlwJTIwb2NlYW4lMjBiYWNrZ3JvdW5kfGVufDF8fHx8MTc1ODQ0Njk4OHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral")`,
+          background: `linear-gradient(135deg, rgba(248, 249, 250, 0.75) 0%, rgba(233, 236, 239, 0.65) 100%), url("https://res.cloudinary.com/dgpwz1nqr/image/upload/v1759077911/b987ead2-b0b6-4c13-83fa-83894a3e671e_hvxzwq.jpg")`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed'
@@ -411,7 +411,7 @@ export default function Cruises({ onNavigateBack, onNavigateToContact, onNavigat
       </section>
 
       {/* Ready to Start Your Cruise Journey Section - WITH WAVE ICONS */}
-      <section className="py-16 bg-gray-50 relative overflow-hidden">
+      <section className="pt-16 pb-24 bg-gray-50 relative overflow-hidden">
         {/* Background decorative elements */}
         <div className="absolute top-20 left-10 w-56 h-56 watercolor-blob opacity-10 floating-element"></div>
         <div className="absolute bottom-32 right-20 w-40 h-40 watercolor-blob-coral opacity-15 floating-element" style={{animationDelay: '3s'}}></div>
@@ -433,7 +433,7 @@ export default function Cruises({ onNavigateBack, onNavigateToContact, onNavigat
           </div>
 
           {/* Single Column Layout */}
-          <div className="max-w-4xl mx-auto space-y-8">
+          <div className="max-w-4xl mx-auto space-y-6">
             
             {/* FIRST - Ready, Set, Sail and Save Box */}
             <div 
