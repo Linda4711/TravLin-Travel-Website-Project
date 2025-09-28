@@ -401,7 +401,7 @@ export default function TravLinStories({
       <section 
         className="relative min-h-[85vh] flex items-center justify-center overflow-hidden pt-24"
         style={{
-          backgroundImage: `linear-gradient(135deg, rgba(0, 117, 204, 0.45) 0%, rgba(237, 125, 49, 0.35) 100%), url("${storiesHeroImage}")`,
+          backgroundImage: `linear-gradient(135deg, rgba(0, 117, 204, 0.25) 0%, rgba(237, 125, 49, 0.20) 100%), url("${storiesHeroImage}")`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed'
