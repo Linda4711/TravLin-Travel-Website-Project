@@ -33,11 +33,7 @@
       ]
     }
   ],
-  "functions": {
-    "app/api/**/*.ts": {
-      "runtime": "edge"
-    }
-  },
+
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "installCommand": "npm install",
