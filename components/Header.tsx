@@ -265,7 +265,7 @@ export default function Header({ onNavigateToServices, onNavigateToCruises, onNa
           {/* Brand - Logo Placeholder */}
           <div className="flex items-center flex-shrink-0">
             <button 
-              className="flex items-center bg-white/15 backdrop-blur-md border border-white/30 rounded-lg p-2 hover:scale-105 transition-all duration-300 shadow-sm" 
+              className="flex items-center hover:scale-105 transition-all duration-300" 
               onClick={() => {
                 if (onNavigateToHome) {
                   onNavigateToHome()
@@ -274,9 +274,36 @@ export default function Header({ onNavigateToServices, onNavigateToCruises, onNa
                 }
               }}
             >
-              <div className="h-8 w-8 sm:h-9 sm:w-9 lg:h-10 lg:w-10 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-white/90 text-xs font-medium">LOGO</div>
+              <div className="flex items-center justify-center">
+                <img 
+                  src="https://res.cloudinary.com/dgpwz1nqr/image/upload/v1759070661/2025_graphic_only_on_clear_with_blue_circle_millpa.png"
+                  alt="TravLin Travel - Logo"
+                  className="h-8 w-auto sm:h-10 lg:h-12 object-contain hover:rotate-3 transition-transform duration-300 hover:scale-105"
+                  style={{ filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.2))', border: 'none', outline: 'none', background: 'transparent' }}
+                  onError={(e) => {
+                    console.log('TravLin Logo failed to load - showing fallback');
+                    const target = e.currentTarget as HTMLImageElement;
+                    target.style.display = 'none';
+                    const fallbackDiv = target.nextElementSibling as HTMLElement;
+                    if (fallbackDiv) {
+                      fallbackDiv.style.display = 'flex';
+                    }
+                  }}
+                  onLoad={() => console.log('✅ TravLin ACTUAL Cloudinary logo loaded successfully from dgpwz1nqr!')}
+                />
+                <div 
+                  className="h-8 w-8 sm:h-10 sm:w-10 lg:h-12 lg:w-12 items-center justify-center
+                    bg-gradient-to-br from-blue-600 to-blue-700 text-white rounded-lg shadow-lg
+                    hover:rotate-3 transition-all duration-300 hover:scale-105"
+                  style={{ 
+                    display: 'none',
+                    filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.2))',
+                    fontSize: 'clamp(16px, 3vw, 24px)',
+                    fontWeight: 'bold',
+                    fontFamily: 'Georgia, serif'
+                  }}
+                >
+                  TL
                 </div>
               </div>
             </button>
