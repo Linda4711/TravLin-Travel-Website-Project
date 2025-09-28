@@ -29,7 +29,7 @@ export const blogPosts = [
     id: 3,
     title: "Travellers Choice: NTIA Champions Again! - 4th Consecutive Win!",
     excerpt: 'Celebrating another incredible achievement! Christian Hunter, MD of Travellers Choice, discusses winning Most Outstanding Travel Agency Network for the fourth consecutive year. Discover the secret to their success and why TravLin Travel is proud to be part of this award-winning network.',
-    image: 'https://images.unsplash.com/photo-1726804973612-3e610a28ba3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0cmF2ZWxsZXJzJTIwY2hvaWNlJTIwYXdhcmRzJTIwY2VyZW1vbnklMjBidXNpbmVzc3hlbnwxfHx8fDE3NTgxMzE2MDd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+    image: 'https://res.cloudinary.com/dgpwz1nqr/image/upload/v1759077926/NTIA_2024_TC_2_xtr1gl.png',
     author: 'TravLin Travel',
     date: '2024-10-18',
     readTime: '12 min read',
