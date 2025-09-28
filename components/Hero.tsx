@@ -83,8 +83,6 @@ export default function Hero() {
         }}
       />
 
-
-
       {/* Main Hero Content - Enhanced with Motion */}
       <div className="relative z-20 text-center px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto pt-20 sm:pt-24 lg:pt-28">
         <motion.div
@@ -96,7 +94,7 @@ export default function Hero() {
           
           {/* TravLin Logo and Branding - Enhanced with hover effect */}
           <div className="relative mb-1 sm:mb-2">
-            {/* TravLin Logo Placeholder - Clean Professional Box */}
+            {/* TravLin Logo - Clean Direct Display */}
             <motion.div 
               className="flex justify-center mb-4"
               whileHover={{ scale: 1.02 }}
@@ -106,20 +104,18 @@ export default function Hero() {
                 initial={{ scale: 0.9, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 1, delay: 0.2 }}
-                className="bg-white/10 backdrop-blur-md border border-white/20 rounded-lg shadow-sm max-w-[90vw] flex items-center justify-center"
-                style={{
-                  width: 'clamp(24rem, 50vw, 36rem)',
-                  height: 'clamp(10rem, 20vw, 16rem)',
-                  aspectRatio: '16/9'
-                }}
+                className="flex items-center justify-center"
               >
-                <div className="text-center p-6">
-                  <div className="text-white text-3xl sm:text-4xl font-bold mb-2 tracking-wide">
-                    <span style={{color: 'var(--brand-yellow)'}}>TravLin</span>
-                    <span className="text-white ml-2">Travel</span>
-                  </div>
-                  <div className="text-white/80 text-sm sm:text-base font-medium">Your Travel Specialists</div>
-                </div>
+                <ImageWithFallback
+                  src="https://res.cloudinary.com/dgpwz1nqr/image/upload/v1759070964/2025_Landscape_on_clear_logo_with_blue_circle_kxfi4l.png"
+                  alt="TravLin Travel - Your Travel Specialists"
+                  className="h-32 w-auto sm:h-40 md:h-48 lg:h-56 xl:h-64 object-contain hover:scale-105 transition-transform duration-300"
+                  style={{ 
+                    filter: 'drop-shadow(0 6px 20px rgba(0,0,0,0.4))',
+                    maxWidth: '90vw'
+                  }}
+                  onLoad={() => console.log('✅ TravLin HERO landscape logo loaded successfully!')}
+                />
               </motion.div>
             </motion.div>
             
