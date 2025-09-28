@@ -175,7 +175,7 @@ export default function TravelOptions({ onNavigateBack, onNavigateToContact, onN
       <section 
         className="relative min-h-[85vh] flex items-center justify-center overflow-hidden pt-24"
         style={{
-          background: `linear-gradient(135deg, rgba(0, 117, 204, 0.45) 0%, rgba(237, 125, 49, 0.35) 100%), url("https://images.unsplash.com/photo-1696519668789-ce564581ddf9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxteWtvbm9zJTIwd2luZG1pbGxzJTIwd2hpdGUlMjBhcmNoaXRlY3R1cmV8ZW58MXx8fHwxNzU4NDUyNTMzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral")`,
+          background: `linear-gradient(135deg, rgba(0, 117, 204, 0.25) 0%, rgba(237, 125, 49, 0.20) 100%), url("https://images.unsplash.com/photo-1696519668789-ce564581ddf9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxteWtvbm9zJTIwd2luZG1pbGxzJTIwd2hpdGUlMjBhcmNoaXRlY3R1cmV8ZW58MXx8fHwxNzU4NDUyNTMzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral")`,
           backgroundSize: '115%',
           backgroundPosition: 'center 65%',
           backgroundAttachment: 'fixed'
