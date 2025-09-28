@@ -8,8 +8,8 @@ import TravLinButton from './components/TravLinButton'
 import Testimonials from './components/Testimonials'
 import SectionDivider from './components/SectionDivider'
 
-// Using travel diary/pen/passport memories image for Contact Us hero
-const contactHeroImage = 'https://images.unsplash.com/photo-1655722725332-9925c96dd627?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb250YWN0JTIwdXMlMjB0cmF2ZWx8ZW58MXx8fHwxNzU4MDA1NTQ2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral'
+// Using TravLin Travel branded hero image for Contact Us
+const contactHeroImage = 'https://res.cloudinary.com/dgpwz1nqr/image/upload/v1759077936/Why-Use-Travlin-travel-17_ee3rkv.png'
 
 
 interface ContactPageProps {
@@ -94,7 +94,7 @@ export default function ContactPage({ onNavigateBack, onNavigateToServices, onNa
       <section 
         className="relative min-h-[85vh] flex items-center justify-center overflow-hidden pt-24"
         style={{
-          background: `linear-gradient(135deg, rgba(0, 117, 204, 0.85) 0%, rgba(237, 125, 49, 0.75) 100%), url(${contactHeroImage})`,
+          background: `linear-gradient(135deg, rgba(0, 117, 204, 0.25) 0%, rgba(237, 125, 49, 0.20) 100%), url(${contactHeroImage})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed'
@@ -132,8 +132,8 @@ export default function ContactPage({ onNavigateBack, onNavigateToServices, onNa
         </div>
       </section>
 
-      {/* Full Testimonials Section with Review Buttons - ONLY on Contact Page */}
-      <Testimonials hideHeader={true} showReviewButtons={true} />
+      {/* Screen 2 Testimonials: CCA 26 testimonial with Review Buttons - ONLY on Contact Page */}
+      <Testimonials hideHeader={true} showReviewButtons={true} specificTestimonialId={11} />
 
       
       <Footer 
